@@ -1,12 +1,12 @@
-// app.js
-const http = require('http');
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello, there!\n');
-});
-
-const PORT = 3000;
-server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:3000/`);
-});
+const express = require('express'); 
+const app = express(); 
+const port = process.env.PORT || 3000; 
+  
+app.get('/', (req, res) => { 
+  res.send('Hello, Azure! This is a Node.js application.'); 
+}); 
+  
+app.listen(port, () => { 
+  console.log(`Server is running on port ${port}`); 
+}); 
