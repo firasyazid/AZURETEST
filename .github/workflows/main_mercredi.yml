@@ -53,4 +53,4 @@ jobs:
           app-name: 'Mercredi'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7B80175211394978AA73A3E89F6AE490 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E745FA4CE1CB472FB90C817342F892A5 }}
